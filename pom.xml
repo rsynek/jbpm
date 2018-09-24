@@ -75,6 +75,20 @@
         <updatePolicy>daily</updatePolicy>
       </snapshots>
     </repository>
+    <repository>
+      <id>jws5-sp1-er1</id>
+      <name>JWS5 SP1 ER1</name>
+      <url>http://download.devel.redhat.com/devel/candidates/JWS/JWS-5.0.0-SP1_ER1/maven-repository</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>daily</updatePolicy>
+      </snapshots>
+    </repository>
   </repositories>
 
   <scm>
@@ -189,10 +203,17 @@
         <artifactId>simple-jndi</artifactId>
         <version>0.11.4.1</version>
       </dependency>
+      <!--
       <dependency>
         <groupId>org.jboss.narayana.jta</groupId>
         <artifactId>narayana-jta</artifactId>
         <version>5.9.0.Final</version>
+      </dependency>
+      -->
+      <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-dbcp</artifactId>
+        <version>9.0.7.redhat-12</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
